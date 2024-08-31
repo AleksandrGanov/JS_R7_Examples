@@ -8,7 +8,7 @@
         {
             title: "Кастомное меню. Верхний уровень",
             msg: "Выберите макрос из списка ниже",
-            //resizable:true,
+            resizable: true,
 
             width: 600,
             buttons: [
@@ -24,7 +24,7 @@
                 caption: "Макрос 2",
                 value: "m2"
             }, ],
-            //primary: "no",
+            primary: "no",
             closable: true,
             callback: MainLevelMenuFunc,
         });
