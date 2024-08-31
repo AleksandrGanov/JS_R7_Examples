@@ -1,6 +1,6 @@
 // аналог VBA: FormatNumber(Expression[,NumDigitsAfterDecimal [,IncludeLeadingDigit [,UseParensForNegativeNumbers [,GroupDigits]]]])=>Variant(String)
 
-function formatNumber(value,
+function FormatNumber(value,
     numDigitsAfterDecimal = 2,
     includeLeadingDigit = true,
     useParensForNegativeNumbers = false,
@@ -39,7 +39,7 @@ console.log(formatNumber(12345.6789, 2, true, false, true)); // "12,345.68" - г
 // ---------------------------------------------------------------------------------------------------------
 // аналог VBA: Format (Expression[, Format[, FirstDayOfWeek[, FirstWeekOfYear]]])=>Variant (String)
 
-function formatNumber(expression, format)
+function FormatNumber(expression, format)
 {
     if (typeof expression !== 'number' || isNaN(expression))
         throw new TypeError("Первый аргумент должен быть числом.");

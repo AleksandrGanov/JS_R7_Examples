@@ -1,3 +1,5 @@
+// аналог VBA: FormatCurrency(Expression[,NumDigitsAfterDecimal [,IncludeLeadingDigit,[UseParensForNegativeNumbers[,GroupDigits]]]])=> Variant(String)
+
 function FormatCurrency(expression,
     numDigitsAfterDecimal = 2,
     includeLeadingDigit = false,
