@@ -8,7 +8,7 @@
 - [Горячие клавиши редактора Р7-Офис](https://support.r7-office.ru/desktop_editors/plugins-and-macros/general_about_plugins_macros/gorjachie-klavishi-dlja-raboty-s-oknom-makrosy/)
 - [Документация по API Р7-Офис](https://support.r7-office.ru/category/using-api-document-builder/)
 - [Документация по API OnlyOffice](https://api.onlyoffice.com/officeapi/basic)
-- [Справочный ресурс "Metanit"](https://metanit.com/web/javascript/1.1.php)
+- [Справочный ресурс по JavaScript "Metanit"](https://metanit.com/web/javascript/1.1.php)
 - [Справочный ресурс "Современный учебник JavaScript"](https://learn.javascript.ru)
 - [Он-лайн редактор JavaScript](https://www.codechef.com/javascript-online-compiler)
 - [Группа Telegram "Р7 Office JavaScript Плагины и Макросы"](https://t.me/R7JavaScript)
@@ -17,4 +17,4 @@
 ## Примеры:
 
 ### Text:
-- [**DeleteSpaces.js**](Text/DeleteSpaces.js). Пример удаление пробелов в начале и конце текста ячейки
+- [**DeleteSpaces.js**](Text/DeleteSpaces.js). Удаление пробелов в начале и конце текста ячейки
