@@ -1,6 +1,7 @@
 (function()
 {
-    DeleteSpaces();
+    // Пример использования
+	DeleteSpaces();
     
     function DeleteSpaces()
     {

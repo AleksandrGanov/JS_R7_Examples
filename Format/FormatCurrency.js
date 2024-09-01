@@ -1,13 +1,12 @@
 (function()
 {
-    // аналог VBA: FormatCurrency(Expression[,NumDigitsAfterDecimal [,IncludeLeadingDigit,[UseParensForNegativeNumbers[,GroupDigits]]]])=> Variant(String)
-
     // Примеры использования
     console.log(formatCurrency(1234.567)); // Форматирование с двумя знаками после запятой и группировкой
     console.log(formatCurrency(1234.567, 3)); // Форматирование с тремя знаками после запятой
     console.log(formatCurrency(1234.567, 2, true)); // Форматирование с ведущим нулем, если число < 1
     console.log(formatCurrency(1234.567, 2, false, false, false)); // Форматирование без группировки
 
+    // аналог VBA: FormatCurrency(Expression[,NumDigitsAfterDecimal [,IncludeLeadingDigit,[UseParensForNegativeNumbers[,GroupDigits]]]])=> Variant(String)
     function FormatCurrency(expression,
         numDigitsAfterDecimal = 2,
         includeLeadingDigit = false,
