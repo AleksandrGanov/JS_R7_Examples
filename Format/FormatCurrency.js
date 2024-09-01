@@ -17,8 +17,7 @@
             throw new TypeError("Первый аргумент должен быть числом.");
 
         // Создаем объект Intl.NumberFormat для форматирования чисел в денежном формате
-        const options =
-		{
+        const options = {
             style: 'currency',
             currency: 'USD', // Установите валюту по умолчанию, если необходимо
             minimumFractionDigits: numDigitsAfterDecimal,
