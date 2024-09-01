@@ -18,7 +18,7 @@
 	ws.SetName("Товары");
 	
 	/* Заполняем первую строку заголовками, последующие строки данным из
-		массива "data"*/
+	массива "data"*/
 	for (var i = 0; i < headers.length; i++)
 	{
 		ws.GetRangeByNumber(0, i).SetValue(headers[i]);
