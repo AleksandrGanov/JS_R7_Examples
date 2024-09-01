@@ -21,6 +21,7 @@
 
 ### Ranges
 - [**FillListFromArray**](Ranges/FillListFromArray.js). Заполнение листа данными из массива
+- [**SetFillColor**](Ranges/SetFillColor.js). Окрашивание ячейки, установка "без заполнения"
 
 ### Text
 - [**DeleteSpaces**](Text/DeleteSpaces.js). Удаление пробелов в начале и конце текста ячейки
