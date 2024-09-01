@@ -17,7 +17,7 @@
 ## Примеры
 
 ### Format
-- [**FormatCurrency**](Format/FormatCurrency.js). Форматирование вывода денежных сумм
+- [FormatCurrency](Format/FormatCurrency.js). Форматирование вывода денежных сумм
 
 ### Ranges
 - [FillListFromArray](Ranges/FillListFromArray.js). Заполнение листа данными из массива
