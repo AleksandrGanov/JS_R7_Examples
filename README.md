@@ -21,7 +21,9 @@
 
 ### Ranges
 - [FillListFromArray](Ranges/FillListFromArray.js). Заполнение листа данными из массива
+- [InsertRow](Ranges/InsertRow.js). Окрашивание строки и вставка новой строки со смещение окрашенной строки вниз
 - [SetFillColor](Ranges/SetFillColor.js). Окрашивание ячейки, установка "без заполнения"
+- [SetValue](Ranges/SetValue.js). Запись данных в ячейку таблицы
 
 ### Text
 - [DeleteSpaces](Text/DeleteSpaces.js). Удаление пробелов в начале и конце текста ячейки
