@@ -1,7 +1,7 @@
 # JS_R7_Examples
 Примеры для работы c JS в Р7-Офис
 
-##Информационные ресурсы по работе с макросами:
+## Информационные ресурсы по работе с макросами:
 - [Учебный курс "Основы разработки плагинов и макросов в Р7-Офис"](https://r7-consult.ru/vc-oglav)
 - [Мини-гайд по написанию макросов Р7-Офис](https://r7-office.ru/tpost/gj80r5kp41-gaid-po-napisaniyu-makrosov-na-javascrip)
 - [Документация по плагинам и макросом Р7-Офис](https://support.r7-office.ru/category/desktop_editors/plugins-and-macros/)
@@ -16,7 +16,7 @@
 - [Группа Telegram "Р7 Office JavaScript Плагины и Макросы"](https://t.me/R7JavaScript)
 - [Группа Telegram "R7-Office User Community Group"](https://t.me/r7officeucg)
 
-##Примеры:
+## Примеры:
 
-###Text:
+### Text:
 - **DeleteSpaces.js**. Удаляет пробелы в конце и начале текста
