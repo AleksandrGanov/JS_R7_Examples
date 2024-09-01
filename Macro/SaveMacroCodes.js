@@ -27,7 +27,7 @@
         {
             let macroNameRng = ws.GetRange(`A${++i}`);
 
-            macroNameRng.SetValue(name);
+            macroNameRng.SetValue(macro.name);
             macroNameRng.SetBold(true);
 
             let macroCodeRng = ws.GetRange(`A${++i}`);
