@@ -21,6 +21,11 @@
 ### Format
 - [FormatCurrency](Format/FormatCurrency.js). Форматирование вывода денежных сумм
 
+### Macro
+- [StartMacroQueue](Macro/StartMacroQueue.js). Запуск макросов в требуемой очередности
+- [StartSingleMacro](Macro/StartSingleMacro.js). Запуск единичного макроса
+- [StartSingleMacroWithParam](Macro/StartSingleMacroWithParam.js). Запуск единичного макроса с параметром
+
 ### Ranges
 - [FillListFromArray](Ranges/FillListFromArray.js). Заполнение листа данными из массива
 - [InsertRow](Ranges/InsertRow.js). Окрашивание строки и вставка новой строки со смещение окрашенной строки вниз
