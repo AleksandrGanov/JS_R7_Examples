@@ -19,5 +19,8 @@
 ### Format
 - [**FormatCurrency**](Format/FormatCurrency.js). Форматирование вывода денежных сумм
 
+### Ranges
+- [**FillListFromArray**](Ranges/FillListFromArray.js). Заполнение листа данными из массива
+
 ### Text
 - [**DeleteSpaces**](Text/DeleteSpaces.js). Удаление пробелов в начале и конце текста ячейки
