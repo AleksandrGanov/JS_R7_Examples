@@ -17,7 +17,7 @@
         Api.AddSheet(CodeBaseBackUpWsName);
 
     let ws = Api.GetSheet(CodeBaseBackUpWsName);
-    var i = 0;
+    let i = 0;
 
     // Производим запись на лист всех макросов
     ws.GetUsedRange().Clear();
