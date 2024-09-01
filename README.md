@@ -22,6 +22,7 @@
 - [FormatCurrency](Format/FormatCurrency.js). Форматирование вывода денежных сумм
 
 ### Macro
+- [SaveMacroCodes](Macro/SaveMacroCodes.js). Сохранение кода всех макросов на скрытом листе книги
 - [StartMacroQueue](Macro/StartMacroQueue.js). Запуск макросов в требуемой очередности
 - [StartSingleMacro](Macro/StartSingleMacro.js). Запуск единичного макроса
 - [StartSingleMacroWithParam](Macro/StartSingleMacroWithParam.js). Запуск единичного макроса с параметром
