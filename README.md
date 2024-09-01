@@ -1,5 +1,5 @@
 # JS_R7_Examples
-Материалы для работы c JS в Р7-Офис
+Материалы для работы c макросами на JS в Р7-Офис
 
 ## Информационные ресурсы по работе с макросами:
 - [Учебный курс "Основы разработки плагинов и макросов в Р7-Офис"](https://r7-consult.ru/vc-oglav)
@@ -20,8 +20,8 @@
 - [**FormatCurrency**](Format/FormatCurrency.js). Форматирование вывода денежных сумм
 
 ### Ranges
-- [**FillListFromArray**](Ranges/FillListFromArray.js). Заполнение листа данными из массива
-- [**SetFillColor**](Ranges/SetFillColor.js). Окрашивание ячейки, установка "без заполнения"
+- [FillListFromArray](Ranges/FillListFromArray.js). Заполнение листа данными из массива
+- [SetFillColor](Ranges/SetFillColor.js). Окрашивание ячейки, установка "без заполнения"
 
 ### Text
-- [**DeleteSpaces**](Text/DeleteSpaces.js). Удаление пробелов в начале и конце текста ячейки
+- [DeleteSpaces](Text/DeleteSpaces.js). Удаление пробелов в начале и конце текста ячейки
