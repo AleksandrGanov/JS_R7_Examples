@@ -1,43 +1,46 @@
-// аналог VBA: FormatCurrency(Expression[,NumDigitsAfterDecimal [,IncludeLeadingDigit,[UseParensForNegativeNumbers[,GroupDigits]]]])=> Variant(String)
-
-function FormatCurrency(expression,
-    numDigitsAfterDecimal = 2,
-    includeLeadingDigit = false,
-    useParensForNegativeNumbers = false,
-    groupDigits = true)
+(function()
 {
-    if (typeof expression !== 'number' || isNaN(expression))
-        throw new TypeError("Первый аргумент должен быть числом.");
+    // аналог VBA: FormatCurrency(Expression[,NumDigitsAfterDecimal [,IncludeLeadingDigit,[UseParensForNegativeNumbers[,GroupDigits]]]])=> Variant(String)
 
-    // Создаем объект Intl.NumberFormat для форматирования чисел в денежном формате
-    const options =
+    // Примеры использования
+    console.log(formatCurrency(1234.567)); // Форматирование с двумя знаками после запятой и группировкой
+    console.log(formatCurrency(1234.567, 3)); // Форматирование с тремя знаками после запятой
+    console.log(formatCurrency(1234.567, 2, true)); // Форматирование с ведущим нулем, если число < 1
+    console.log(formatCurrency(1234.567, 2, false, false, false)); // Форматирование без группировки
+
+    function FormatCurrency(expression,
+        numDigitsAfterDecimal = 2,
+        includeLeadingDigit = false,
+        useParensForNegativeNumbers = false,
+        groupDigits = true)
     {
-        style: 'currency',
-        currency: 'USD', // Установите валюту по умолчанию, если необходимо
-        minimumFractionDigits: numDigitsAfterDecimal,
-        maximumFractionDigits: numDigitsAfterDecimal,
-        useGrouping: groupDigits
-    };
+        if (typeof expression !== 'number' || isNaN(expression))
+            throw new TypeError("Первый аргумент должен быть числом.");
 
-    // Создаем экземпляр Intl.NumberFormat
-    const formatter = new Intl.NumberFormat('en-US', options);
+        // Создаем объект Intl.NumberFormat для форматирования чисел в денежном формате
+        const options =
+		{
+            style: 'currency',
+            currency: 'USD', // Установите валюту по умолчанию, если необходимо
+            minimumFractionDigits: numDigitsAfterDecimal,
+            maximumFractionDigits: numDigitsAfterDecimal,
+            useGrouping: groupDigits
+        };
 
-    // Форматируем число
-    let formattedNumber = formatter.format(expression);
+        // Создаем экземпляр Intl.NumberFormat
+        const formatter = new Intl.NumberFormat('en-US', options);
 
-    // Если нужно добавить ведущий ноль, если число меньше 1
-    if (includeLeadingDigit && expression < 1 && expression > -1)
-        formattedNumber = formattedNumber.replace(/^(?!\$\s*0)/, '$0');
+        // Форматируем число
+        let formattedNumber = formatter.format(expression);
 
-    // Если нужно использовать скобки для отрицательных чисел
-    if (useParensForNegativeNumbers && expression < 0)
-        formattedNumber = formattedNumber.replace(/^\(\$/, '$(').replace(/\)$/, ')');
+        // Если нужно добавить ведущий ноль, если число меньше 1
+        if (includeLeadingDigit && expression < 1 && expression > -1)
+            formattedNumber = formattedNumber.replace(/^(?!\$\s*0)/, '$0');
 
-    return formattedNumber;
-}
+        // Если нужно использовать скобки для отрицательных чисел
+        if (useParensForNegativeNumbers && expression < 0)
+            formattedNumber = formattedNumber.replace(/^\(\$/, '$(').replace(/\)$/, ')');
 
-// Примеры использования
-console.log(formatCurrency(1234.567)); // Форматирование с двумя знаками после запятой и группировкой
-console.log(formatCurrency(1234.567, 3)); // Форматирование с тремя знаками после запятой
-console.log(formatCurrency(1234.567, 2, true)); // Форматирование с ведущим нулем, если число < 1
-console.log(formatCurrency(1234.567, 2, false, false, false)); // Форматирование без группировки
+        return formattedNumber;
+    }
+})();

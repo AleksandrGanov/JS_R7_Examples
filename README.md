@@ -14,7 +14,10 @@
 - [Группа Telegram "Р7 Office JavaScript Плагины и Макросы"](https://t.me/R7JavaScript)
 - [Группа Telegram "R7-Office User Community Group"](https://t.me/r7officeucg)
 
-## Примеры:
+## Примеры
 
-### Text:
-- [**DeleteSpaces.js**](Text/DeleteSpaces.js). Удаление пробелов в начале и конце текста ячейки
+### Format
+- [**FormatCurrency**](Format/FormatCurrency.js). Форматирование вывода денежных сумм
+
+### Text
+- [**DeleteSpaces**](Text/DeleteSpaces.js). Удаление пробелов в начале и конце текста ячейки
