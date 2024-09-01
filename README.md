@@ -17,4 +17,4 @@
 ## Примеры:
 
 ### Text:
-[- **DeleteSpaces.js**. Удаляет пробелы в конце и начале текста](Text/DeleteSpaces.js)
+- [**DeleteSpaces.js**](Text/DeleteSpaces.js). Пример удаление пробелов в начале и конце текста ячейки
