@@ -6,7 +6,7 @@
 ## Информационные ресурсы по работе с макросами:
 - [Учебный курс "Основы разработки плагинов и макросов в Р7-Офис"](https://r7-consult.ru/vc-oglav)
 - [Мини-гайд по написанию макросов Р7-Офис](https://r7-office.ru/tpost/gj80r5kp41-gaid-po-napisaniyu-makrosov-na-javascrip)
-- [Документация по плагинам и макросом Р7-Офис](https://support.r7-office.ru/category/desktop_editors/plugins-and-macros/)
+- [Документация по плагинам и макросам Р7-Офис](https://support.r7-office.ru/category/desktop_editors/plugins-and-macros/)
 - [Горячие клавиши редактора Р7-Офис](https://support.r7-office.ru/desktop_editors/plugins-and-macros/general_about_plugins_macros/gorjachie-klavishi-dlja-raboty-s-oknom-makrosy/)
 - [Документация по API Р7-Офис](https://support.r7-office.ru/category/using-api-document-builder/)
 - [Документация по API OnlyOffice](https://api.onlyoffice.com/officeapi/basic)
@@ -22,6 +22,7 @@
 - [FormatCurrency](Format/FormatCurrency.js). Форматирование вывода денежных сумм
 
 ### Macro
+- [FunctionDescription](Macro/FunctionDescription.js). Указание описании функции с возможностью вывода в информационное окна редактора макросов
 - [SaveMacroCodes](Macro/SaveMacroCodes.js). Сохранение кода всех макросов на скрытом листе книги
 - [StartMacroQueue](Macro/StartMacroQueue.js). Запуск макросов в требуемой очередности
 - [StartSingleMacro](Macro/StartSingleMacro.js). Запуск единичного макроса
