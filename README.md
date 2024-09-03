@@ -22,7 +22,7 @@
 - [FormatCurrency](Format/FormatCurrency.js). Форматирование вывода денежных сумм
 
 ### Macro
-- [FunctionDescription](Macro/FunctionDescription.js). Указание описании функции с возможностью вывода в информационное окна редактора макросов
+- [FunctionDescription](Macro/FunctionDescription.js). Указание описания функции
 - [SaveMacroCodes](Macro/SaveMacroCodes.js). Сохранение кода всех макросов на скрытом листе книги
 - [StartMacroQueue](Macro/StartMacroQueue.js). Запуск макросов в требуемой очередности
 - [StartSingleMacro](Macro/StartSingleMacro.js). Запуск единичного макроса
