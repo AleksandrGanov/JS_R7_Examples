@@ -1,55 +1,39 @@
 (function()
 {
-    GetActionByColorAdv();
+    GetActionByColor();
 
-    /* Функция реализует обработку цвет заливки ячейки с последующим действием. 
-		Более продвинутый вариант от https://t.me/felicitavanna, позволяющий уйти
-		от указания конкретных свойств объекта с цветом, т.к. от версии к версии 
-		API название свойство может меняться. 
-		Ссылка на группу в ТГ: https://t.me/R7JavaScript/1798 */
-
-    function GetActionByColorAdv()
+	// Функция реализует обработку цвет заливки ячейки с последующим действием
+    function GetActionByColor()
     {
         let ws = Api.GetActiveSheet();
-        let rng = ws.GetRange("B6:B10");
+        let rng = ws.GetRange("A1:B2");
+        
+        // Заливаем ячейку А1 черным цветом
+        ws.GetRange("A1").SetFillColor(Api.CreateColorFromRGB(1, 1, 1));
 
-        // Задаем коллекцию проверяемых цветов
-        let colors = {
-            "розовый": getIdColor(ws.GetRange("A1").GetFillColor()),
-            "жёлтый": getIdColor(ws.GetRange("A2").GetFillColor()),
-            "зелёный": getIdColor(ws.GetRange("A3").GetFillColor()),
-            "синий": getIdColor(ws.GetRange("A4").GetFillColor()),
-        };
-
-        console.log(colors);
-
+        /* Если цвет ячейки совпадает с нужным цветом, 
+        	то можно выполнить целевое действие. При необходимости сравнивать 
+        	с несколькими цветами можно продолжить ветвление "if", либо использовать
+        	конструкцию "switch" */
+        
         // Перебираем все ячейки ренджа
         rng.ForEach((cell) =>
         {
-            // Получает цвет ячейки
-            let cellColor = getIdColor(cell.GetFillColor());
+            try
+            {
+                let color01 = cell.GetFillColor().color.mw;
+                let color02 = Api.CreateColorFromRGB(1, 1, 1).color.mw;
 
-            console.log(cellColor);
+                console.log(`Цвет ячейки: ${color01}`);
+                console.log(`Цвет сравнения: ${color02}`);
 
-            // Сверяем с нужным цветом
-            if (cellColor != "No Fill")
-                for (const colorValue of Object.values(colors))
-                    if (cellColor === colorValue)
-                    {
-                        console.log(`Цвет: ${Object.keys(colors)[Object.values(colors).indexOf(colorValue)]} и значение ${cell.GetValue()}`);
-                        break;
-                    }
-            else
-                console.log(`Нет заливки и значение ${cell.GetValue()}`);
+                if (color01 == color02)
+                    console.log("Есть черная ячейка");
+            }
+            catch (error)
+            {
+                console.error("Нет заливки");
+            }
         });
-    }
-
-    // Функция получает цвет объекта
-    function getIdColor(colorObject)
-    {
-        if (colorObject != "No Fill")
-            return colorObject.color[Object.keys(colorObject.color)[0]];
-        else
-            return "No Fill";
     }
 })();
