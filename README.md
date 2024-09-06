@@ -21,6 +21,7 @@
 ### Format
 - [FormatCurrency](Format/FormatCurrency.js). Форматирование вывода денежных сумм
 - [GetActionByColor](Format/GetActionByColor.js). Исполнение какого-либо действия в зависимости от цвета ячейки
+- [GetActionByColorAdv](Format/GetActionByColorAdv.js). Исполнение какого-либо действия в зависимости от цвета ячейки
 
 ### Macro
 - [FunctionDescription](Macro/FunctionDescription.js). Указание описания функции
