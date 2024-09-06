@@ -8,7 +8,7 @@
         let ws = Api.GetActiveSheet();
         let rng = ws.GetRange("A1:B2");
         
-        // Заливаем ячейка А1 черным цветом
+        // Заливаем ячейку А1 черным цветом
         ws.GetRange("A1").SetFillColor(Api.CreateColorFromRGB(1, 1, 1));
 
         /* Если цвет ячейки совпадает с нужным цветом, 
